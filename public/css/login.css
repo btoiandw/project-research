@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/blur-background05.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    filter: grayscale(50%);
+
+}
+
+.contact-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    /* height: 400px; */
+    padding: 80px 40px;
+    background: #F7F5F2;
+    border-radius: 10px;
+}
+
+.avatar {
+    position: absolute;
+    width: 100px;
+    overflow: hidden;
+    top: calc(-150px/2);
+    left: calc(350px/2);
+}
+
+.contact-form h4 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #000;
+    text-align: center;
+}
+
+.contact-form p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.contact-form input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-username {
+    border: none;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+/* 
+.contact-form input[type="password"] {
+    border: none;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+} */
+
+.contact-form button[type=submit] {
+    color: #fff;
+    font-size: 15px;
+    background: #F49D1A;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 60px;
+    width: auto;
+    outline: none;
+    margin-top: 5%;
+    text-transform: uppercase;
+
+}
+
+.contact-form a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input[type=checkbox] {
+    width: 20%;
+}
