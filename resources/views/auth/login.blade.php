@@ -29,10 +29,11 @@
         <form id="form-validation" name="form-validation" method="POST" action="{{ route('login') }}">
             @csrf
             <label class="form-label">Username</label>
-            <input style="border: none;border-bottom: 1px solid rgb(196, 196, 196);background: transparent;outline: none;height: 40px;color: #000;font-size: 16px;"
-                placeholder="Enter Username" name="username" type="text" required>
+            <input
+                style="border: none;border-bottom: 1px solid rgb(196, 196, 196);background: transparent;outline: none;height: 40px;color: #000;font-size: 16px;"
+                placeholder="Enter Username" name="username" type="text" >
             <label class="form-label">Password</label>
-            <input name="password" type="password" class="form-username"placeholder="Enter Password" required>
+            <input name="password" type="password" class="form-username"placeholder="Enter Password" >
             <div class="d-grid d-md-flex justify-content-md-center">
                 <button type="submit" value="Sign in" name="login">
                     {{ __('Login') }}
