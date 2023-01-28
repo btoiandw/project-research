@@ -15,6 +15,7 @@ class CreateTbAdminsTable extends Migration
     {
         Schema::create('tb_admins', function (Blueprint $table) {
             $table->integer('employee_admin_id')->primary()->unique();
+            $table->integer('employee_id')->uniqid();
             $table->string('username')->unique();
             $table->string('password');
             $table->integer('status_workadmin')->default(1); //1=ทำงาน,0=ไม่มำงาน

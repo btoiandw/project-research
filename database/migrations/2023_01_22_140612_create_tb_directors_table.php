@@ -15,6 +15,7 @@ class CreateTbDirectorsTable extends Migration
     {
         Schema::create('tb_directors', function (Blueprint $table) {
             $table->integer('employee_referees_id')->primary()->unique();
+            $table->integer('employee_id'); //บุคคลภายนอก = 0
             $table->string('username')->unique();
             $table->string('password');
             $table->string('pname');
